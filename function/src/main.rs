@@ -1,21 +1,47 @@
-fn main() {
-    print_phase("Hello, world!");
-    println!("{}", gcd(20, 4));
-}
+fn main(){
+    let one = 1;
 
-fn print_phase(phrase : &str) {
-    println!("The value of phrase is: {}", phrase);
-}
-
-fn gcd(mut a: u64, mut b: u64) -> u64 {
-    while a != 0 {
-        if a < b {
-            let c = a;
-            a = b;
-            b = c;
-        }
-
-        a = a % b;
+    if one > 10 {
+        println!("True");
+    } else if one == 1 {
+        println!("Equal");
     }
-    b
-}  
+    else {
+        println!("False");
+    }
+
+    // let mut num = 0;
+    // 'counter: loop {
+    //     println!("Count: {}", num);
+    //     let mut decrease = 5;
+    //     loop {
+    //         println!("Decreasing: {}", decrease);
+    //         if decrease == 4 {
+    //             break;
+    //         }
+    //         if num == 2 {
+    //             break 'counter;
+    //         }
+    //         decrease -= 1; //decrease = decrease - 1
+    //     }
+    //     num += 1; // num = num + 1
+    // }
+
+    // let mut num = 0;
+    // while num <= 5 {
+    //     println!("Num: {}", num);
+    //     num += 1;
+    // }
+
+    // let vec: Vec<i8> = (0..10).collect();
+
+    // for element in vec {
+    //     println!("{}", element);
+    // }
+
+    // for number in (1..4).rev() {
+    //     println!("{}", number)
+    // }
+    // println!("LIFTOFF!!!!");
+
+}
